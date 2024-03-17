@@ -152,7 +152,7 @@ const Project = () => {
 											/>
 										</svg>
 										<span style={{ fontSize: "14px" }}>
-											live site is under maintenance
+											live demo is under maintenance
 										</span>
 									</button>
 								</a>
