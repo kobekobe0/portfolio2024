@@ -14,6 +14,13 @@ import aws from "./images/aws.png";
 import digitalocean from "./images/digital.png";
 import php from "./images/php.png";
 import next from "./images/nextjs.png";
+import shadcn from "./images/shadcn.png";
+import mui from "./images/mui.png";
+import postgresql from "./images/PostgresSQL.png";
+import zustand from "./images/zustand.png";
+import sequelize from "./images/Sequelize.png";
+import tanstack from "./images/tanstack.png";
+import mssql from "./images/mssql.png";
 // import w1 from "./images/weather/1.png";
 // import w2 from "./images/weather/2.png";
 // import w3 from "./images/weather/3.png";
@@ -69,8 +76,80 @@ import twit2 from "./images/twitter/2.png";
 import twit3 from "./images/twitter/3.png";
 import twit4 from "./images/twitter/4.png";
 import twit5 from "./images/twitter/5.png";
+import nav1 from "./images/admin/1.png";
+import nav2 from "./images/admin/2.png";
+import nav3 from "./images/admin/3.png";
+import nav4 from "./images/admin/4.png";
+import nav5 from "./images/admin/5.png";
+import nav6 from "./images/admin/6.png";
+import nav7 from "./images/admin/7.png";
+import nav8 from "./images/admin/8.png";
+import nav9 from "./images/admin/9.png";
+import navQms1 from "./images/navq/1.png";
+import navQms2 from "./images/navq/2.png";
+import navQms3 from "./images/navq/3.png";
+import navQms4 from "./images/navq/4.png";
+import navQms5 from "./images/navq/5.png";
+import navQms6 from "./images/navq/6.png";
+import navQms7 from "./images/navq/7.png";
 
 export const projectData = [
+	{
+		title: "NAV QMS Admin Portal",
+		description:
+			"A centralized admin dashboard for managing licenses and access control of multiple subscribed companies. Built with a modular, multi-tenant architecture to support dynamic company configurations, real-time license tracking, and scalable alert systems for improved operational transparency.",
+		tools: [node, react, shadcn, mui, postgresql, zustand, sequelize],
+		toolsText: [
+			"Node.js",
+			"React.js",
+			"Shadcn UI",
+			"MUI",
+			"PostgreSQL",
+			"Zustand",
+			"Sequelize ORM",
+		],
+		github: "",
+		link: "https://admin-portal-dev.navqms.com",
+		photos: [nav1, nav2, nav3, nav4, nav5, nav6, nav7, nav8, nav9],
+		id: "navqmsportal01",
+	},
+	{
+		title: "NAV QMS (Quality Management System)",
+		description:
+			"Contributed to a compliance tracking system for a US-based client by focusing on UI/UX development—building reusable components, integrating APIs, and delivering modular, user-friendly interfaces that significantly improved workflow efficiency and developer productivity.",
+		tools: [next, tanstack, zustand, mui],
+		toolsText: ["Next.js", "TanStack Query", "MUI"],
+		github: "",
+		link: "https://default.navqms.com/",
+		photos: [navQms1, navQms2, navQms3, navQms4, navQms5, navQms6, navQms7],
+		id: "navqmsui01",
+	},
+	{
+		title: "Barangay Management System",
+		description:
+			"Designed to automate and digitize barangay operations for over 2,000 residents; features include resident records, document/form generation, and census analytics, reducing paperwork by 70% and significantly improving operational efficiency.",
+		tools: [mongo, express, react, node],
+		toolsText: ["MongoDB", "Express.js", "React.js", "Node.js"],
+		github: "https://github.com/kobekobe0/barangayManagementSystemClient",
+		backend: "https://github.com/kobekobe0/barangayManagementSystemServer",
+		link: "",
+		photos: [],
+		id: "barangayms01",
+	},
+
+	{
+		title: "ScholarPass (Capstone)",
+		description:
+			"Built a QR code–based gate pass system for managing entry of students and visitors; architected for scalability and reliability to support concurrent users; and scheduled for university-wide implementation to enhance campus security, targeting over 4,000 students.",
+		tools: [mongo, express, react, node],
+		toolsText: ["MongoDB", "Express.js", "React.js", "Node.js"],
+		github: "https://github.com/kobekobe0/scholarpass",
+		backend: "https://github.com/kobekobe0/scholarpass_server",
+		link: "",
+		photos: [],
+		id: "scholarpasscapstone01",
+	},
+
 	{
 		title: "Tabibito",
 		description:
@@ -181,6 +260,22 @@ export const Skills = [
 		name: "MongoDB",
 		image: mongo,
 	},
+	{
+		name: "MSSQL",
+		image: mssql,
+	},
+	{
+		name: "MySQL",
+		image: mysql,
+	},
+	{
+		name: "PostgreSQL",
+		image: postgresql,
+	},
+	{
+		name: "Sequelize",
+		image: sequelize,
+	},
 
 	{
 		name: "Socket.io",
@@ -192,16 +287,24 @@ export const Skills = [
 		image: tailwind,
 	},
 	{
+		name: "MUI",
+		image: mui,
+	},
+	{
+		name: "Shadcn",
+		image: shadcn,
+	},
+	{
+		name: "Tanstack",
+		image: tanstack,
+	},
+	{
+		name: "Zustand",
+		image: zustand,
+	},
+	{
 		name: "PHP",
 		image: php,
-	},
-	{
-		name: "MySQL",
-		image: mysql,
-	},
-	{
-		name: "AWS",
-		image: aws,
 	},
 	{
 		name: "Digital Ocean",

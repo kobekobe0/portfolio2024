@@ -8,6 +8,7 @@ import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import raksquad from "../Raksquad.png";
+import tailwind from "../images/tailwind.png";
 import iona from "../iona.png";
 import next from "../images/nextjs.png";
 import node from "../images/node.png";
@@ -18,6 +19,11 @@ import socket from "../images/socket.png";
 import react from "../images/react.png";
 import graph from "../images/graphql.png";
 import aws from "../images/aws.png";
+import landRegLogo from "../lares.jpg";
+import dotnet from "../images/csharp.png";
+import mssql from "../images/mssql.png";
+import gitlab from "../images/gitlab.png";
+import sequelize from "../images/Sequelize.png";
 
 import "./styles/projects.css";
 
@@ -74,7 +80,127 @@ const Experience = () => {
 							<hr />
 							<div>
 								<div>
-									<h4>Jul 2023 - Present</h4>
+									<h4>Feb 2025 - May 2025</h4>
+								</div>
+								<div>
+									<h2
+										style={{
+											display: "flex",
+											alignItems: "center",
+										}}
+									>
+										<img
+											src={landRegLogo}
+											style={{
+												width: "2rem",
+												marginRight: "10px",
+											}}
+											alt="Land Registration Systems Inc."
+										/>
+										Land Registration Systems Inc.
+									</h2>
+									<h4>
+										Full-stack Developer (Internship, Quezon
+										City, PH)
+									</h4>
+									<p>
+										<b>My Responsibilities</b>
+									</p>
+									<ul>
+										<li>
+											Led a team of interns in developing
+											a cashless payment system under the
+											supervision of a senior developer.
+										</li>
+										<li>
+											Developed a fallback cron job server
+											running twice daily to catch and
+											reprocess missed transactions,
+											enhancing fault tolerance and
+											reducing manual recovery efforts.
+										</li>
+										<li>
+											Gained hands-on experience in DevOps
+											by scripting CI/CD pipelines using
+											GitLab CI/CD. Configured automated
+											build, test, and deploy workflows
+											for staging environments, including
+											job orchestration, environment
+											variables, and lifecycle monitoring.
+										</li>
+										<li>
+											Collaborated in agile sprints,
+											participating in weekly code reviews
+											and task breakdowns.
+										</li>
+									</ul>
+								</div>
+								<div>
+									<h4
+										style={{
+											display: "flex",
+											alignItems: "center",
+										}}
+									>
+										Technology Used:
+										<img
+											src={next}
+											alt="Next.js"
+											style={{
+												width: "30px",
+												margin: "0 10px",
+											}}
+										/>
+										<img
+											src={tailwind}
+											alt="Tailwind CSS"
+											style={{
+												width: "30px",
+												margin: "0 10px",
+											}}
+										/>
+										<img
+											src={dotnet}
+											alt="C# .NET"
+											style={{
+												width: "30px",
+												margin: "0 10px",
+											}}
+										/>
+										<img
+											src={mssql}
+											alt="MSSQL"
+											style={{
+												width: "30px",
+												margin: "0 10px",
+											}}
+										/>
+										<img
+											src={gitlab}
+											alt="GitLab CI/CD"
+											style={{
+												width: "30px",
+												margin: "0 10px",
+											}}
+										/>
+										<img
+											src={sequelize}
+											alt="Sequelize ORM"
+											style={{
+												width: "30px",
+												margin: "0 10px",
+											}}
+										/>
+									</h4>
+									<h5>
+										References: <u>Renalyn Galorio</u>
+									</h5>
+								</div>
+							</div>
+							<hr />
+							<div>
+								<div>
+									<h4>Jul 2023 - January 2024</h4>
 								</div>
 								<div>
 									<h2
@@ -102,12 +228,11 @@ const Experience = () => {
 											Truesight is a web platform that
 											allows users to control everything
 											from transactions to client
-											interactions all in one spot. I led
-											the development team that created
-											it. My other responsibilities were
-											making it as easy to use as possible
-											for customers and creating a mobile
-											app API for photographers that would
+											interactions all in one spot. My
+											responsibilities were making it as
+											easy to use as possible for
+											customers and creating a mobile app
+											API for photographers that would
 											make uploading pictures a breeze.
 											Additionally, I deployed the web
 											frontend and backend using digital
@@ -182,7 +307,10 @@ const Experience = () => {
 							<hr />
 							<div>
 								<div>
-									<h4>Oct 2022 - Feb 2023</h4>
+									<h4>
+										Oct 2022 - Feb 2023, resumed Jan 2025 -
+										Present
+									</h4>
 								</div>
 								<div>
 									<h2

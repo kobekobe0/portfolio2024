@@ -107,7 +107,6 @@ const About = () => {
 												alignItems: "center",
 												margin: "10px",
 												padding: "10px",
-												border: "1px solid #ddd",
 												borderRadius: "4px",
 												flexDirection: "column",
 											}}

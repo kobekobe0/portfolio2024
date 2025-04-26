@@ -24,7 +24,7 @@ const INFO = {
 	about: {
 		title: "Kobe, a full-stack web developer.",
 		description:
-			"Kobe Brian Santos, 20-year-old currently a working 3rd year college student based in the Philippines. I'm a web developer and a self-taught programmer. I'm currently working as a full stack developer, I mainly use MERN stack when developing web apps. The thing I love most about coding is that there’s always something new to learn so it’s impossible to get bored. There’s so many ways to be creative and so many different problems to solve and I thrive on the challenge. I am currently looking for frontend, backend, or full-stack web development roles.",
+			"Kobe Brian Santos, 21-year-old a graduating college student based in the Philippines. I'm a web developer and a self-taught programmer. I'm currently working as a full stack developer, I mainly use MERN stack when developing web apps. The thing I love most about coding is that there’s always something new to learn so it’s impossible to get bored. There’s so many ways to be creative and so many different problems to solve and I thrive on the challenge. I am currently looking for frontend, backend, or full-stack web development roles.",
 	},
 
 	articles: {
