@@ -15,6 +15,8 @@ import "./app.css";
 import Project from "./pages/project";
 import Experience from "./pages/experience";
 
+import { Analytics } from "@vercel/analytics/react";
+
 function App() {
 	useEffect(() => {
 		if (TRACKING_ID !== "") {
@@ -24,6 +26,7 @@ function App() {
 
 	return (
 		<div className="App">
+			<Analytics />
 			<Routes>
 				<Route path="/" element={<Homepage />} />
 				<Route path="/about" element={<About />} />
