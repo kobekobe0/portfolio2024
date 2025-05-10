@@ -16,9 +16,9 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Full-stack web developer, and a chess bum.",
+		title: "Creating Fast, Scalable, and Maintainable Systems.",
 		description:
-			"I am a Full-stack web developer with expertise in MERN stack. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
+			"Full-stack web developer specializing in MERN stack with experience in scalable, real-time systems for government and enterprise clients. Delivered production-ready applications in both startup and internship settings",
 	},
 
 	about: {

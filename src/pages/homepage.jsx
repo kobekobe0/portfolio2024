@@ -201,6 +201,9 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-projects">
+							<div className="homepage-works">
+								<Works />
+							</div>
 							<AllProjects />
 						</div>
 
@@ -220,10 +223,6 @@ const Homepage = () => {
 										/>
 									</div>
 								))}
-							</div>
-
-							<div className="homepage-works">
-								<Works />
 							</div>
 						</div>
 

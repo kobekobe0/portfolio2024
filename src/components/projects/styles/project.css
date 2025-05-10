@@ -27,7 +27,7 @@
 }
 
 .project-logo {
-	width: 30px;
+	width: "fit";
 	display: flex;
 	align-items: center;
 }
@@ -72,5 +72,7 @@
 @media (max-width: 600px) {
 	.project {
 		height: 300px;
+		display: flex;
+		flex-direction: column;
 	}
 }

@@ -6,6 +6,7 @@ import Card from "../common/card";
 
 import Iona from "../../iona.png";
 import Raksquad from "../../Raksquad.png";
+import lares from "../../lares.jpg";
 
 import "./styles/works.css";
 
@@ -22,7 +23,7 @@ const Works = () => {
 		>
 			<Card
 				icon={faBriefcase}
-				title="Work"
+				title="Experiences"
 				body={
 					<div className="works-body">
 						<div className="work">
@@ -38,7 +39,24 @@ const Works = () => {
 								Full Stack Web Developer
 							</div>
 							<div className="work-duration">
-								Oct 2022 - Feb 2023
+								Oct 2022 - Present
+							</div>
+						</div>
+
+						<div className="work">
+							<img
+								src={lares}
+								alt="Iona Labs"
+								className="work-image"
+							/>
+							<div className="work-title">
+								Land Registration Systems, Inc.
+							</div>
+							<div className="work-subtitle">
+								Full Stack Web Developer Intern
+							</div>
+							<div className="work-duration">
+								Feb 2025 - May 2025
 							</div>
 						</div>
 
@@ -54,7 +72,7 @@ const Works = () => {
 								Full Stack Web Developer
 							</div>
 							<div className="work-duration">
-								July 2023 - Present
+								July 2023 - January 2024
 							</div>
 						</div>
 					</div>
