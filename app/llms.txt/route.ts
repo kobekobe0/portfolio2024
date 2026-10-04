@@ -1,6 +1,7 @@
 import { site, experience, education, skills } from "@/lib/site";
 import { projects } from "@/lib/projects";
 import { articles } from "@/lib/articles";
+import { apps } from "@/lib/apps";
 
 // /llms.txt: a plain Markdown summary of the site for AI assistants. Generated from the same
 // data as the pages, so it never drifts out of date.
@@ -29,6 +30,10 @@ export function GET() {
     "## Case studies",
     "",
     ...projects.map((p) => `- [${p.title}](${site.url}/work/${p.slug}): ${p.summary} ${p.org}${p.period ? `, ${p.period}` : ""}.`),
+    "",
+    "## Indie apps",
+    "",
+    ...apps.map((a) => `- ${a.url ? `[${a.name}](${a.url})` : a.name} (${a.status}, ${a.platform}): ${a.summary}`),
     "",
     "## Experience",
     "",

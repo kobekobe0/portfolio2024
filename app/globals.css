@@ -918,6 +918,10 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+  html {
+    scroll-padding-top: 7rem;
+  }
+
   .site-header .wrap {
     padding-top: 0.25rem;
   }
@@ -958,4 +962,61 @@ a:hover {
 /* Links in a spec row: pull up so the text, not the 44px hit area, lines up with the rail label. */
 .section > .inline-links {
   margin-top: -0.55rem;
+}
+
+/* ---------- Indie apps ---------- */
+
+.apps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1.5rem, 3vw, 2rem);
+  border-radius: var(--radius-l);
+  background: var(--bg-2);
+}
+
+.app h3 {
+  margin-top: 0.6rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.024em;
+}
+
+.app p {
+  margin-top: 0.5rem;
+  color: var(--label-2);
+}
+
+.app .where {
+  margin-top: auto;
+  padding-top: 1.25rem;
+  font-size: 0.875rem;
+  color: var(--label-2);
+}
+
+.app .chev {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  min-height: 2.75rem;
+}
+
+.status[data-status="On sale"] {
+  color: var(--live);
+}
+
+.status[data-status="On sale"]::before {
+  opacity: 1;
+}
+
+@media (max-width: 860px) {
+  .apps {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }

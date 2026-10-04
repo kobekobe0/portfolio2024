@@ -2,8 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import WorkRegister from "@/components/WorkRegister";
+import AppTiles from "@/components/AppTiles";
 import { site, experience, education, skills } from "@/lib/site";
 import { featured } from "@/lib/projects";
+import { apps } from "@/lib/apps";
 import { articles } from "@/lib/articles";
 import { personId, websiteId } from "@/lib/schema";
 
@@ -86,6 +88,15 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="block" aria-labelledby="apps">
+        <h2 id="apps" className="block-title">
+          Indie apps. <span>Products designed, built and shipped on the side.</span>
+        </h2>
+        <div className="block-body">
+          <AppTiles items={apps} />
+        </div>
+      </section>
+
       <section className="block" aria-labelledby="experience">
         <h2 id="experience" className="block-title">
           Experience. <span>Four roles since 2022, from startups to a bank.</span>
@@ -159,6 +170,20 @@ export default function Home() {
           ))}
         </ul>
       </section>
+
+      <JsonLd
+        data={apps
+          .filter((a) => a.url)
+          .map((a) => ({
+            "@type": "SoftwareApplication",
+            name: a.name,
+            description: a.summary,
+            url: a.url,
+            operatingSystem: "macOS",
+            applicationCategory: "UtilitiesApplication",
+            author: { "@id": personId },
+          }))}
+      />
 
       <JsonLd
         data={{

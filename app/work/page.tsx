@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import WorkRegister from "@/components/WorkRegister";
+import AppTiles from "@/components/AppTiles";
+import { apps } from "@/lib/apps";
 import { site } from "@/lib/site";
 import { projects, earlier } from "@/lib/projects";
 import { breadcrumbSchema, personId } from "@/lib/schema";
@@ -29,6 +31,14 @@ export default function Work() {
       <section className="section" aria-labelledby="case-studies">
         <h2 id="case-studies">Case studies</h2>
         <WorkRegister items={projects} />
+      </section>
+
+      <section className="section" aria-labelledby="indie">
+        <div>
+          <h2 id="indie">Indie apps</h2>
+          <p className="section-note">Built and shipped on the side.</p>
+        </div>
+        <AppTiles items={apps} />
       </section>
 
       <section className="section" aria-labelledby="earlier">
