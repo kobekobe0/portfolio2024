@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kobe Brian Santos – Resume</title>
+<!--
+  Source for public/Kobe_Brian_Santos_Resume.pdf. Regenerate with:  ./resume/build.sh
+  One US Letter page, classic serif layout.
+-->
+<style>
+  @page { size: Letter; margin: 0.36in 0.5in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; }
+  body {
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 9.7pt;
+    line-height: 1.16;
+    color: #000;
+  }
+  a { color: inherit; text-decoration: none; }
+  header { text-align: center; }
+  h1 { margin: 0; font-size: 19pt; font-weight: 700; letter-spacing: 0.01em; }
+  .headline { margin: 0 0 1pt; font-weight: 700; font-size: 10.6pt; }
+  .contact { margin: 0; }
+  h2 {
+    margin: 4pt 0 2pt;
+    padding-bottom: 1pt;
+    border-bottom: 0.8pt solid #000;
+    text-align: center;
+    font-size: 10.6pt;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .entry { margin-top: 2.5pt; break-inside: avoid; }
+  .entry:first-of-type { margin-top: 0; }
+  .line { display: flex; justify-content: space-between; gap: 12pt; }
+  .line b { font-weight: 700; }
+  .line i { font-style: italic; }
+  .stack { margin: 0.5pt 0 0; }
+  ul { margin: 1pt 0 0; padding-left: 14pt; }
+  li { margin: 0.6pt 0; padding-left: 1pt; }
+  .skills p { margin: 0.8pt 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Kobe Brian Santos</h1>
+  <p class="headline">Full-Stack Developer</p>
+  <p class="contact">Bulacan, Philippines | <a href="mailto:kobebrian.santos.e@gmail.com">kobebrian.santos.e@gmail.com</a> | +63 924 115 3023</p>
+  <p class="contact"><a href="https://www.linkedin.com/in/kobesantos/">linkedin.com/in/kobesantos</a> | <a href="https://kobebriansantos.vercel.app">kobebriansantos.vercel.app</a> | <a href="https://github.com/kobekobe0">github.com/kobekobe0</a></p>
+</header>
+
+<h2>Education</h2>
+<div class="entry">
+  <div class="line"><b>Bulacan State University</b><span>Bulacan, Philippines</span></div>
+  <div class="line"><i>Bachelor of Science in Information Technology, Cum Laude (GWA: 1.6)</i><span>Jul 2025</span></div>
+</div>
+
+<h2>Experience</h2>
+<div class="entry">
+  <div class="line"><b>Philippine Savings Bank (PSBank)</b><span>Makati City, Philippines</span></div>
+  <div class="line"><i>Software Engineer</i><span>Jun 2026 – Present</span></div>
+  <p class="stack">Stack: C# .NET Core, Oracle 19c, PL/SQL, React.js, TypeScript, Node.js, PM2</p>
+  <ul>
+    <li>Develop and maintain the Supplier E-Portal (SEP), the bank's supplier and contract management system, owning contract computation logic and invoice syncing with other internal banking tools.</li>
+    <li>Implemented backdated daily-rate support across Oracle PL/SQL packages, reworking the maker-checker approval flow to archive superseded rates before update and preserve a complete audit history.</li>
+    <li>Built a TypeScript validator for contract CSV uploads covering required columns, date parsing, backdated-date rejection, and duplicate detection against staged records, catching bad data before it reaches the database.</li>
+    <li>Resolved a token-refresh race condition in the Node.js API proxy by adding a server-side token cache with single-flight deduplication, stabilizing sessions under PM2 cluster mode.</li>
+  </ul>
+</div>
+<div class="entry">
+  <div class="line"><b>Land Registration Systems Inc.</b><span>Quezon City, Philippines</span></div>
+  <div class="line"><i>Junior Full-Stack Developer</i><span>Feb 2025 – Jun 2026</span></div>
+  <p class="stack">Stack: C# .NET Core, Dapper, Angular 20, AngularJS, Next.js, MSSQL, Sybase, Sequelize, GitLab CI/CD</p>
+  <ul>
+    <li>Shipped a PRMS automation module serving 200+ Land Registration Authority branches with auto-generated procurements, consumption-based stock monitoring, and configurable real-time stock alerts, cutting manual procurement work by ~50%.</li>
+    <li>Built a centralized API response decoder for a third-party payment gateway integration and a cron server that automatically recovers up to 10 missed transactions per day, eliminating manual intervention.</li>
+    <li>Engineered an item loss tagging system that blocks lost assets from progressing through procurement workflows, removing a manual reconciliation step and creating an audit trail for central office officers.</li>
+    <li>Migrated legacy AngularJS screens to Angular 20 with reusable Angular Material components (data tables, dropdowns, file inputs, breadcrumbs, sidenav), backed by Sybase stored procedures for server-side pagination, sorting, and search.</li>
+  </ul>
+</div>
+<div class="entry">
+  <div class="line"><b>Raksquad Tech</b><span>Remote</span></div>
+  <div class="line"><i>Full-Stack Developer (Contract)</i><span>Jul 2023 – Jan 2024</span></div>
+  <p class="stack">Stack: Next.js, Node.js, Express.js, MongoDB, Socket.IO, MUI, Digital Ocean</p>
+  <ul>
+    <li>Architected and delivered Truesight, a real-time image transaction platform for theme parks with an in-app editing interface, stress-tested to handle 10 concurrent processors uploading 200+ photos simultaneously from mobile.</li>
+    <li>Implemented real-time photo delivery and transaction state sync via Socket.IO, enabling instant digital purchases for multiple customers at once and reducing dependency on physical booths.</li>
+  </ul>
+</div>
+<div class="entry">
+  <div class="line"><b>Iona Innovations Labs</b><span>Remote</span></div>
+  <div class="line"><i>Full-Stack Developer (Contract)</i><span>Oct 2022 – Apr 2023</span></div>
+  <p class="stack">Stack: Next.js, React.js, TypeScript, Node.js, Express.js, MongoDB, GraphQL, Auth0, React Native</p>
+  <ul>
+    <li>Owned backend API development for a live job-matching platform for medical professionals, including RBAC-controlled endpoints and Auth0 integration, shipped to production within 2 months.</li>
+  </ul>
+</div>
+
+<h2>Indie Apps and Projects</h2>
+<div class="entry">
+  <div class="line"><span><b>Director</b> | Swift, SwiftUI, ScreenCaptureKit</span><a href="https://director-app.pages.dev">director-app.pages.dev</a></div>
+  <ul>
+    <li>Built and sell a macOS screen recorder that edits as you record: automatic zooms, a smoothed cursor and a polished finish.</li>
+  </ul>
+</div>
+<div class="entry">
+  <div class="line"><span><b>LidLogic</b> | Swift, IOKit HID, Core Animation</span><a href="https://lidlogic.pages.dev">lidlogic.pages.dev</a></div>
+  <ul>
+    <li>Built and sell a menu-bar app that reads the MacBook hinge sensor to blur and dim the screen as the lid closes, at ~0.5% CPU.</li>
+  </ul>
+</div>
+<div class="entry">
+  <div class="line"><span><b>Clipper</b> | Swift, WhisperKit, Vision, Claude API</span><span>In development</span></div>
+  <ul>
+    <li>macOS app that turns long videos into captioned vertical clips, with on-device transcription and Claude choosing the highlights.</li>
+  </ul>
+</div>
+<div class="entry">
+  <div class="line"><span><b>NAVQMS: Admin Portal and Client App</b> | Node.js, React.js, PostgreSQL, Sequelize, Shadcn, Zustand</span><span>Apr 2024 – Oct 2024</span></div>
+  <ul>
+    <li>Built a multi-tenant license and access-control portal with per-company databases, plus the client app for core QMS workflows.</li>
+  </ul>
+</div>
+
+<h2>Technical Skills</h2>
+<div class="skills">
+  <p><b>Languages:</b> TypeScript, JavaScript, C#, Swift, SQL, PL/SQL, PHP</p>
+  <p><b>Frontend:</b> React.js, Next.js, Angular 20, AngularJS, Angular Material, React Native, SwiftUI, Tailwind CSS, MUI, Shadcn</p>
+  <p><b>Backend:</b> Node.js, Express.js, C# .NET Core, Dapper, Laravel, REST APIs, GraphQL, Socket.IO, BullMQ</p>
+  <p><b>Databases:</b> Oracle 19c, PostgreSQL, MSSQL, Sybase, MySQL, MongoDB, Redis, Prisma, Sequelize, Drizzle</p>
+  <p><b>AI:</b> Claude API, OpenAI API, Claude Code, MCP (Model Context Protocol), multi-agent workflows, LLM prompt pipelines</p>
+  <p><b>DevOps and Auth:</b> GitLab CI/CD, Digital Ocean, PM2, NGINX, JWT, Auth0, RBAC</p>
+</div>
+</body>
+</html>
