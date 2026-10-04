@@ -90,6 +90,7 @@ const all: Project[] = [
     period: "", // add the dates, e.g. "Mar 2026 to present"
     sort: 202601,
     status: "Shipped",
+    published: false,
     stack: ["Next.js", "Node.js", "Express.js", "Prisma", "BullMQ", "Claude API", "Puppeteer", "Handlebars"],
     built: [
       "A BullMQ job pipeline that calls Claude Haiku for diff-based bullet rewriting, so only the bullets that need to change are rewritten.",
@@ -136,6 +137,7 @@ const all: Project[] = [
     sort: 202404,
     status: "Shipped",
     stack: ["Node.js", "React", "Next.js", "PostgreSQL", "Sequelize", "shadcn/ui", "MUI", "Zustand", "TanStack Query"],
+    featured: true,
     built: [
       "A multi-tenant admin portal for licenses and access control across subscribed companies, with per-company database credentials and real-time license tracking.",
       "The main client-facing application, delivering the core QMS workflows to end users across multiple organizations.",

@@ -10,7 +10,7 @@ import { personSchema, websiteSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} | AI-Native Full-Stack Developer in the Philippines`,
+    default: `${site.name} | Full-Stack Developer in the Philippines`,
     template: `%s | ${site.name}`,
   },
   description: site.description,
@@ -23,11 +23,10 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: "en_PH",
     url: "/",
-    title: `${site.name} | AI-Native Full-Stack Developer in the Philippines`,
+    title: `${site.name} | Full-Stack Developer in the Philippines`,
     description: site.description,
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: `${site.name}, AI-native full-stack developer` }],
   },
-  twitter: { card: "summary_large_image", images: ["/og.png"] },
+  twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true, googleBot: { "max-image-preview": "large", "max-snippet": -1 } },
   // After you add the site to Google Search Console, paste the verification code here:
   // verification: { google: "..." },

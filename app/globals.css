@@ -514,21 +514,6 @@ a:hover {
   color: var(--label-2);
 }
 
-/* AI note: one wide tile with prose */
-.feature {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 1.5rem clamp(2rem, 5vw, 4rem);
-  font-size: 1.1875rem;
-  line-height: 1.5;
-  color: var(--label-2);
-}
-
-.feature strong {
-  color: var(--label);
-  font-weight: 600;
-}
-
 /* ---------- Contact ---------- */
 
 .contact {
@@ -910,8 +895,7 @@ a:hover {
     max-width: 26rem;
   }
 
-  .tiles,
-  .feature {
+  .tiles {
     grid-template-columns: minmax(0, 1fr);
   }
 

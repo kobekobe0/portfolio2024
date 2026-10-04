@@ -20,7 +20,7 @@ export default function Home() {
           </p>
           <h1>Kobe Brian Santos builds the back-office systems that banks and government offices run on.</h1>
           <p className="lede">
-            AI-native full-stack developer in the Philippines. Currently on the bank&apos;s supplier and contract
+            Full-stack developer in the Philippines. Currently on the bank&apos;s supplier and contract
             management system. Before that, procurement automation used by 200+ Land Registration Authority branches.
           </p>
           <p className="actions">
@@ -66,7 +66,7 @@ export default function Home() {
             </div>
             <div>
               <dt>Core stack</dt>
-              <dd>C# .NET, Node.js, React, Next.js, Angular, Oracle, PostgreSQL, Claude API</dd>
+              <dd>C# .NET, Node.js, React, Next.js, Angular, Oracle, PostgreSQL</dd>
             </div>
           </dl>
         </aside>
@@ -106,24 +106,6 @@ export default function Home() {
             <Link className="chev" href="/about#experience">
               Full work history
             </Link>
-          </p>
-        </div>
-      </section>
-
-      <section className="block" aria-labelledby="ai">
-        <h2 id="ai" className="block-title">
-          Working with AI. <span>In the workflow and in the product.</span>
-        </h2>
-        <div className="block-body feature">
-          <p>
-            <strong>In the workflow.</strong> Kobe uses AI tools, Claude Code in particular, as a normal part of
-            development: exploring codebases, drafting changes and setting up environments.
-          </p>
-          <p>
-            <strong>In the product.</strong> His <Link href="/work/resume-tailoring-saas">resume-tailoring SaaS</Link>{" "}
-            runs a BullMQ pipeline that calls Claude Haiku to rewrite resume bullets against a job description, and he
-            has built dashboards that connect Claude to tools like Notion and Google Sheets through the Model Context
-            Protocol (MCP).
           </p>
         </div>
       </section>
@@ -183,7 +165,7 @@ export default function Home() {
           "@type": "ProfilePage",
           "@id": `${site.url}/#profilepage`,
           url: site.url,
-          name: `${site.name} | AI-Native Full-Stack Developer in the Philippines`,
+          name: `${site.name} | Full-Stack Developer in the Philippines`,
           isPartOf: { "@id": websiteId },
           mainEntity: { "@id": personId },
           dateModified: site.lastUpdated,

@@ -6,7 +6,7 @@ export const site = {
   url: "https://kobebriansantos.vercel.app",
   name: "Kobe Brian Santos",
   shortName: "Kobe Santos",
-  role: "AI-native full-stack developer",
+  role: "Full-stack developer",
   jobTitle: "Software Engineer",
   employer: "Philippine Savings Bank (PSBank)",
   location: { locality: "Bulacan", country: "Philippines", countryCode: "PH" },
@@ -14,7 +14,7 @@ export const site = {
   resume: "/Kobe_Brian_Santos_Resume.pdf",
   lastUpdated: "2026-10-04",
   description:
-    "Kobe Brian Santos is an AI-native full-stack developer in the Philippines. He builds back-office systems for banks and government offices with C# .NET, Node.js, React, Next.js, Angular and Oracle, and ships AI products on the Claude API.",
+    "Kobe Brian Santos is a full-stack developer in the Philippines. He builds back-office systems for banks and government offices with C# .NET, Node.js, React, Next.js, Angular and Oracle.",
   socials: [
     { label: "GitHub", href: "https://github.com/kobekobe0" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/kobesantos/" },
@@ -128,19 +128,15 @@ export const skills: { group: string; items: string[] }[] = [
 export const quickAnswers: { q: string; a: string }[] = [
   {
     q: "Who is Kobe Brian Santos?",
-    a: "Kobe Brian Santos is an AI-native full-stack developer based in Bulacan, Philippines. He works as a Software Engineer at Philippine Savings Bank (PSBank) and has shipped production systems for government and enterprise clients since 2022.",
+    a: "Kobe Brian Santos is a full-stack developer based in Bulacan, Philippines. He works as a Software Engineer at Philippine Savings Bank (PSBank) and has shipped production systems for government and enterprise clients since 2022.",
   },
   {
     q: "What does Kobe Brian Santos build?",
-    a: "Back-office systems: contract and supplier management for a bank, procurement and inventory automation used by 200+ Land Registration Authority branches, a real-time photo transaction platform for theme parks, and an AI resume-tailoring product built on the Claude API.",
+    a: "Back-office systems: contract and supplier management for a bank, procurement and inventory automation used by 200+ Land Registration Authority branches, a real-time photo transaction platform for theme parks, and a quality management system for a US-based client.",
   },
   {
     q: "What is his tech stack?",
-    a: "C# .NET Core, Node.js and Express on the backend; React, Next.js and Angular on the frontend; Oracle, PostgreSQL, MSSQL, Sybase and MongoDB for data; and the Claude and OpenAI APIs for AI features.",
-  },
-  {
-    q: "What does AI-native mean in his work?",
-    a: "Two things. He uses AI tools such as Claude Code as part of everyday development, and he builds AI features into products, for example a BullMQ pipeline that calls Claude Haiku to rewrite resume bullets against a job description.",
+    a: "C# .NET Core, Node.js and Express on the backend; React, Next.js and Angular on the frontend; and Oracle, PostgreSQL, MSSQL, Sybase and MongoDB for data.",
   },
   {
     q: "Where did he study?",

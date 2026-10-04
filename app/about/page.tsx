@@ -36,8 +36,7 @@ export default function About() {
           </p>
           <p>
             I started with a high school web project in 2019, took my first paid developer job in 2022 while still in
-            college, and graduated cum laude from Bulacan State University in 2025. These days I work AI-native: Claude
-            Code is part of how I build, and I ship products on the Claude API.
+            college, and graduated cum laude from Bulacan State University in 2025.
           </p>
           <p className="actions">
             <a className="button" href={site.resume}>

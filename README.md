@@ -36,7 +36,7 @@ When you change content, bump `lastUpdated` in `lib/site.ts`.
 - `app/sitemap.ts` generates `/sitemap.xml`. `app/robots.ts` generates `/robots.txt` and allows AI crawlers by name.
 - `app/llms.txt/route.ts` generates `/llms.txt`, a Markdown summary for AI assistants.
 - `next.config.mjs` redirects the old URLs (`/projects`, `/experience`, `/articles`, `/article/1`, `/contact`).
-- Social preview image: `public/og.png`.
+- Social preview image: `app/opengraph-image.tsx`, rendered to a static PNG at build time.
 
 ## Deploying on Vercel
 

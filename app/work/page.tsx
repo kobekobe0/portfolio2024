@@ -6,7 +6,7 @@ import { projects, earlier } from "@/lib/projects";
 import { breadcrumbSchema, personId } from "@/lib/schema";
 
 const description =
-  "Case studies of systems Kobe Brian Santos has built: a bank's supplier and contract portal, procurement automation for 200+ government branches, a real-time photo platform and an AI resume product.";
+  "Case studies of systems Kobe Brian Santos has built: a bank's supplier and contract portal, procurement automation for 200+ government branches, a real-time photo platform and a quality management system for a US client.";
 
 export const metadata: Metadata = {
   title: "Work and case studies",
