@@ -43,8 +43,8 @@ export default function Work() {
 
       <section className="section" aria-labelledby="earlier">
         <div>
-          <h2 id="earlier">Earlier projects</h2>
-          <p className="section-note">Built in 2022 while learning full-stack development.</p>
+          <h2 id="earlier">Pre-AI era</h2>
+          <p className="section-note">Written by hand in 2022, while learning full-stack development.</p>
         </div>
         <ul className="group">
           {earlier.map((e) => (

@@ -18,7 +18,7 @@ the sitemap and `/llms.txt` update together.
 | File | What it holds |
 | --- | --- |
 | `lib/site.ts` | Name, role, employer, email, socials, work history, education, skills, quick answers |
-| `lib/projects.ts` | Case studies and the "earlier projects" list |
+| `lib/projects.ts` | Case studies and the "Pre-AI era" list (2022 student projects) |
 | `lib/articles.tsx` | Essays |
 
 To add a project, add an entry to `lib/projects.ts`. It gets its own page at `/work/<slug>`.

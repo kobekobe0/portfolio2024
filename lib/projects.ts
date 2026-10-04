@@ -258,7 +258,7 @@ export function getProject(slug: string) {
   return projects.find((p) => p.slug === slug);
 }
 
-// Student-era projects. Listed on /work without their own pages.
+// Student-era projects, shown on /work as "Pre-AI era". Listed without their own pages.
 export const earlier: { title: string; year: string; summary: string; stack: string; href?: string }[] = [
   {
     title: "Tabibito",
