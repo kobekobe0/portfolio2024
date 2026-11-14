@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import WorkRegister from "@/components/WorkRegister";
@@ -8,6 +7,7 @@ import { featured } from "@/lib/projects";
 import { apps, workshop } from "@/lib/apps";
 import { articles } from "@/lib/articles";
 import { personId, websiteId } from "@/lib/schema";
+import AppLogos from "@/components/AppLogos";
 
 const updated = new Date(site.lastUpdated).toLocaleDateString("en-US", { month: "short", year: "numeric" });
 
@@ -40,15 +40,8 @@ export default function Home() {
         </div>
 
         <aside className="specs-card" aria-labelledby="specs-title">
-          <Link className="card-art" href="/apps/mochi-mascot-studio">
-            <Image
-              src="/images/mochi-mascot.webp"
-              alt="Mochi Mascot Studio: a purple 3D mascot typing on a laptop, made with the app"
-              width={720}
-              height={720}
-              sizes="(max-width: 860px) 26rem, 18rem"
-              priority
-            />
+          <Link className="card-art" href="/#products">
+            <AppLogos />
           </Link>
           <h2 id="specs-title">Tech specs · Updated {updated}</h2>
           <dl className="specs">

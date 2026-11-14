@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import { site, experience, education, skills, quickAnswers } from "@/lib/site";
@@ -14,6 +13,13 @@ export const metadata: Metadata = {
   alternates: { canonical: "/about" },
   openGraph: { type: "profile", title: `About ${site.name}`, description, url: "/about" },
 };
+
+// The terminal beside the intro: each entry is a command and its output.
+const terminal: [string, string][] = [
+  ["whoami", "kobe — full-stack developer"],
+  ["cat location", `${site.location.locality}, ${site.location.country}`],
+  ["ls ~/shipped", "supplier-portal  prms\ntruesight  navqms\nmochi  director  lidlogic"],
+];
 
 export default function About() {
   return (
@@ -45,14 +51,29 @@ export default function About() {
             <a href={`mailto:${site.email}`}>{site.email}</a>
           </p>
         </div>
-        <Image
-          src="/images/kobe-brian-santos.webp"
-          alt="Portrait of Kobe Brian Santos"
-          width={720}
-          height={720}
-          sizes="(max-width: 860px) 12rem, 17rem"
-          priority
-        />
+        <figure className="terminal" aria-label="A terminal introducing Kobe">
+          <div className="terminal-bar" aria-hidden="true">
+            <span />
+            <span />
+            <span />
+            <b>kobe — zsh</b>
+          </div>
+          <pre>
+            <code>
+              {terminal.map(([cmd, out]) => (
+                <span key={cmd}>
+                  <span className="p">$ </span>
+                  {cmd}
+                  {"\n"}
+                  <span className="o">{out}</span>
+                  {"\n"}
+                </span>
+              ))}
+              <span className="p">$ </span>
+              <span className="cursor" aria-hidden="true" />
+            </code>
+          </pre>
+        </figure>
       </div>
 
       <section className="section" aria-labelledby="experience">
