@@ -25,11 +25,11 @@ export default async function OpengraphImage() {
           justifyContent: "space-between",
           padding: "72px 80px",
           background: "#ffffff",
-          color: "#1a1626",
+          color: "#1d1d1f",
           fontFamily: "Inter",
         }}
       >
-        <div style={{ display: "flex", fontSize: 30, color: "#6b6480" }}>Software Engineer at PSBank</div>
+        <div style={{ display: "flex", fontSize: 30, color: "#6e6e73" }}>Software Engineer at PSBank</div>
         <div style={{ display: "flex", fontSize: 70, fontWeight: 600, lineHeight: 1.08, letterSpacing: -2.4 }}>
           Back-office systems that banks and government offices run on.
         </div>
@@ -39,12 +39,12 @@ export default async function OpengraphImage() {
             justifyContent: "space-between",
             alignItems: "center",
             paddingTop: 32,
-            borderTop: "2px solid #e6e1f3",
+            borderTop: "2px solid #e5e5ea",
             fontSize: 30,
           }}
         >
           <span style={{ fontWeight: 600 }}>{site.name}</span>
-          <span style={{ color: "#6b6480" }}>{`Full-stack developer · ${site.location.country}`}</span>
+          <span style={{ color: "#6e6e73" }}>{`Full-stack developer · ${site.location.country}`}</span>
         </div>
       </div>
     ),
