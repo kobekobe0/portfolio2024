@@ -1,7 +1,7 @@
 import { site, experience, education, skills } from "@/lib/site";
 import { projects } from "@/lib/projects";
 import { articles } from "@/lib/articles";
-import { apps } from "@/lib/apps";
+import { apps, workshop } from "@/lib/apps";
 
 // /llms.txt: a plain Markdown summary of the site for AI assistants. Generated from the same
 // data as the pages, so it never drifts out of date.
@@ -23,7 +23,7 @@ export function GET() {
     "## Pages",
     "",
     `- [Home](${site.url}/): summary, selected work, experience and stack`,
-    `- [Work](${site.url}/work): all case studies`,
+    `- [Work](${site.url}/work): all case studies and products`,
     `- [About](${site.url}/about): bio, full work history, education, skills and quick answers`,
     `- [Resume (PDF)](${site.url}${site.resume})`,
     "",
@@ -31,9 +31,13 @@ export function GET() {
     "",
     ...projects.map((p) => `- [${p.title}](${site.url}/work/${p.slug}): ${p.summary} ${p.org}${p.period ? `, ${p.period}` : ""}.`),
     "",
-    "## Indie apps",
+    "## Products",
     "",
-    ...apps.map((a) => `- ${a.url ? `[${a.name}](${a.url})` : a.name} (${a.status}, ${a.platform}): ${a.summary}`),
+    ...apps.map(
+      (a) =>
+        `- [${a.name}](${site.url}/apps/${a.slug}) (${a.status}${a.price ? `, ${a.price}` : ""}, ${a.platform}): ${a.summary}${a.url ? ` Website: ${a.url}` : ""}`,
+    ),
+    ...workshop.map((w) => `- ${w.name} (In progress, ${w.platform}): ${w.summary}`),
     "",
     "## Experience",
     "",

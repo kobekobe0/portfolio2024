@@ -64,7 +64,7 @@
   <div class="line"><i>Software Engineer</i><span>Jun 2026 – Present</span></div>
   <p class="stack">Stack: C# .NET Core, Oracle 19c, PL/SQL, React.js, TypeScript, Node.js, PM2</p>
   <ul>
-    <li>Develop and maintain the Supplier E-Portal (SEP), the bank's supplier and contract management system, owning contract computation logic and invoice syncing with other internal banking tools.</li>
+    <li>Develop the Supplier E-Portal, the bank's supplier and contract system, owning contract computation and invoice syncing.</li>
     <li>Implemented backdated daily-rate support across Oracle PL/SQL packages, reworking the maker-checker approval flow to archive superseded rates before update and preserve a complete audit history.</li>
     <li>Built a TypeScript validator for contract CSV uploads covering required columns, date parsing, backdated-date rejection, and duplicate detection against staged records, catching bad data before it reaches the database.</li>
     <li>Resolved a token-refresh race condition in the Node.js API proxy by adding a server-side token cache with single-flight deduplication, stabilizing sessions under PM2 cluster mode.</li>
@@ -76,9 +76,9 @@
   <p class="stack">Stack: C# .NET Core, Dapper, Angular 20, AngularJS, Next.js, MSSQL, Sybase, Sequelize, GitLab CI/CD</p>
   <ul>
     <li>Shipped a PRMS automation module serving 200+ Land Registration Authority branches with auto-generated procurements, consumption-based stock monitoring, and configurable real-time stock alerts, cutting manual procurement work by ~50%.</li>
-    <li>Built a centralized API response decoder for a third-party payment gateway integration and a cron server that automatically recovers up to 10 missed transactions per day, eliminating manual intervention.</li>
+    <li>Built a payment-gateway response decoder and a cron server that recovers up to 10 missed transactions a day.</li>
     <li>Engineered an item loss tagging system that blocks lost assets from progressing through procurement workflows, removing a manual reconciliation step and creating an audit trail for central office officers.</li>
-    <li>Migrated legacy AngularJS screens to Angular 20 with reusable Angular Material components (data tables, dropdowns, file inputs, breadcrumbs, sidenav), backed by Sybase stored procedures for server-side pagination, sorting, and search.</li>
+    <li>Migrated legacy AngularJS screens to Angular 20 with reusable Material components and server-side paging in Sybase.</li>
   </ul>
 </div>
 <div class="entry">
@@ -87,7 +87,7 @@
   <p class="stack">Stack: Next.js, Node.js, Express.js, MongoDB, Socket.IO, MUI, Digital Ocean</p>
   <ul>
     <li>Architected and delivered Truesight, a real-time image transaction platform for theme parks with an in-app editing interface, stress-tested to handle 10 concurrent processors uploading 200+ photos simultaneously from mobile.</li>
-    <li>Implemented real-time photo delivery and transaction state sync via Socket.IO, enabling instant digital purchases for multiple customers at once and reducing dependency on physical booths.</li>
+    <li>Implemented real-time photo delivery and transaction sync via Socket.IO, so many customers can buy photos at once.</li>
   </ul>
 </div>
 <div class="entry">
@@ -95,43 +95,44 @@
   <div class="line"><i>Full-Stack Developer (Contract)</i><span>Oct 2022 – Apr 2023</span></div>
   <p class="stack">Stack: Next.js, React.js, TypeScript, Node.js, Express.js, MongoDB, GraphQL, Auth0, React Native</p>
   <ul>
-    <li>Owned backend API development for a live job-matching platform for medical professionals, including RBAC-controlled endpoints and Auth0 integration, shipped to production within 2 months.</li>
+    <li>Owned backend APIs (RBAC, Auth0) for a live job-matching platform for medical professionals, shipped in 2 months.</li>
   </ul>
 </div>
 
-<h2>Indie Apps and Projects</h2>
+<h2>Products and Projects</h2>
 <div class="entry">
-  <div class="line"><span><b>Director</b> | Swift, SwiftUI, ScreenCaptureKit</span><a href="https://director-app.pages.dev">director-app.pages.dev</a></div>
-  <ul>
-    <li>Built and sell a macOS screen recorder that edits as you record: automatic zooms, a smoothed cursor and a polished finish.</li>
-  </ul>
+  <div class="line"><span><b>Director</b> | Swift, SwiftUI, ScreenCaptureKit, AVFoundation</span><a href="https://director-app.pages.dev">director-app.pages.dev</a></div>
+  <ul><li>Built and sell ($29) a macOS screen recorder with a real-time compositor for auto-zooms, cursor smoothing and 4K export.</li></ul>
 </div>
 <div class="entry">
-  <div class="line"><span><b>LidLogic</b> | Swift, IOKit HID, Core Animation</span><a href="https://lidlogic.pages.dev">lidlogic.pages.dev</a></div>
-  <ul>
-    <li>Built and sell a menu-bar app that reads the MacBook hinge sensor to blur and dim the screen as the lid closes, at ~0.5% CPU.</li>
-  </ul>
+  <div class="line"><span><b>Mochi · Mascot Studio</b> | Next.js, React Three Fiber, PostgreSQL, Drizzle, OpenAI API</span><a href="https://mochi-mascot-demo.vercel.app">mochi-mascot-demo.vercel.app</a></div>
+  <ul><li>Brand description to procedural 3D mascot, logos, brand kit and sticker packs; credit ledger with AI spend caps.</li></ul>
 </div>
 <div class="entry">
-  <div class="line"><span><b>Clipper</b> | Swift, WhisperKit, Vision, Claude API</span><span>In development</span></div>
-  <ul>
-    <li>macOS app that turns long videos into captioned vertical clips, with on-device transcription and Claude choosing the highlights.</li>
-  </ul>
+  <div class="line"><span><b>Architecture Trainer</b> | JavaScript, Canvas, Claude Code subagents</span><a href="https://architecture-trainer.vercel.app">architecture-trainer.vercel.app</a></div>
+  <ul><li>System-design trainer that runs your architecture through a deterministic traffic simulation and scores it.</li></ul>
 </div>
 <div class="entry">
-  <div class="line"><span><b>NAVQMS: Admin Portal and Client App</b> | Node.js, React.js, PostgreSQL, Sequelize, Shadcn, Zustand</span><span>Apr 2024 – Oct 2024</span></div>
-  <ul>
-    <li>Built a multi-tenant license and access-control portal with per-company databases, plus the client app for core QMS workflows.</li>
-  </ul>
+  <div class="line"><span><b>Ensemble</b> | TypeScript, Node.js, Fastify, SQLite, React</span><a href="https://github.com/kobekobe0/ensemble">github.com/kobekobe0/ensemble</a></div>
+  <ul><li>Runs Claude Code, Codex and Gemini as one team in parallel git worktrees, with cross-provider code review.</li></ul>
+</div>
+<div class="entry">
+  <div class="line"><span><b>LidLogic</b> | Swift, IOKit HID, Core Animation, Sparkle</span><a href="https://lidlogic.pages.dev">lidlogic.pages.dev</a></div>
+  <ul><li>Built and sell ($2) a menu-bar app that dims and blurs the screen as the MacBook lid closes, at ~0.5% CPU.</li></ul>
+</div>
+
+<div class="entry">
+  <div class="line"><span><b>NAVQMS: Admin Portal and Client App</b> | Node.js, React.js, PostgreSQL, Sequelize, Shadcn</span><span>Apr 2024 – Oct 2024</span></div>
+  <ul><li>Multi-tenant license and access-control portal with per-company databases, plus the client app for QMS workflows.</li></ul>
 </div>
 
 <h2>Technical Skills</h2>
 <div class="skills">
   <p><b>Languages:</b> TypeScript, JavaScript, C#, Swift, SQL, PL/SQL, PHP</p>
-  <p><b>Frontend:</b> React.js, Next.js, Angular 20, AngularJS, Angular Material, React Native, SwiftUI, Tailwind CSS, MUI, Shadcn</p>
+  <p><b>Frontend:</b> React.js, Next.js, Angular 20, AngularJS, Angular Material, React Native, SwiftUI, three.js, Tailwind CSS</p>
   <p><b>Backend:</b> Node.js, Express.js, C# .NET Core, Dapper, Laravel, REST APIs, GraphQL, Socket.IO, BullMQ</p>
   <p><b>Databases:</b> Oracle 19c, PostgreSQL, MSSQL, Sybase, MySQL, MongoDB, Redis, Prisma, Sequelize, Drizzle</p>
-  <p><b>AI:</b> Claude API, OpenAI API, Claude Code, MCP (Model Context Protocol), multi-agent workflows, LLM prompt pipelines</p>
+  <p><b>AI:</b> Claude Code (subagents, hooks), Codex CLI, Gemini CLI, Claude API, OpenAI API, MCP, multi-agent orchestration</p>
   <p><b>DevOps and Auth:</b> GitLab CI/CD, Digital Ocean, PM2, NGINX, JWT, Auth0, RBAC</p>
 </div>
 </body>

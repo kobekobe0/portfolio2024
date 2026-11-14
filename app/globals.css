@@ -964,7 +964,7 @@ a:hover {
   margin-top: -0.55rem;
 }
 
-/* ---------- Indie apps ---------- */
+/* ---------- Products: screenshot cards ---------- */
 
 .apps {
   display: grid;
@@ -974,23 +974,50 @@ a:hover {
 
 .app {
   display: flex;
+}
+
+.app-card {
+  display: flex;
   flex-direction: column;
-  padding: clamp(1.5rem, 3vw, 2rem);
+  width: 100%;
+  overflow: hidden;
   border-radius: var(--radius-l);
   background: var(--bg-2);
+  color: var(--label);
+  transition: transform 300ms cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 300ms ease;
+}
+
+.app-card:hover {
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-card:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.app-copy {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: clamp(1.5rem, 3vw, 2rem) clamp(1.5rem, 3vw, 2rem) 1.25rem;
 }
 
 .app h3 {
   margin-top: 0.6rem;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2.4vw, 1.75rem);
   font-weight: 600;
-  line-height: 1.15;
+  line-height: 1.14;
   letter-spacing: -0.024em;
+  text-wrap: balance;
 }
 
 .app p {
   margin-top: 0.5rem;
   color: var(--label-2);
+  text-wrap: pretty;
 }
 
 .app .where {
@@ -1000,23 +1027,148 @@ a:hover {
   color: var(--label-2);
 }
 
-.app .chev {
-  display: inline-flex;
-  align-items: center;
-  align-self: flex-start;
-  min-height: 2.75rem;
+.app .go {
+  margin-top: 0.4rem;
+  color: var(--link);
 }
 
-.status[data-status="On sale"] {
+.app-card:hover .go {
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+/* The screenshot sits at the bottom of the card, inset like a window on a desk. */
+.app-shot {
+  padding-inline: clamp(1rem, 2.5vw, 1.75rem);
+}
+
+.app-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px 12px 0 0;
+  border: 1px solid var(--separator);
+  border-bottom: 0;
+}
+
+/* The lead product spans both columns with copy beside the screenshot. */
+.app.wide {
+  grid-column: 1 / -1;
+}
+
+.app.wide .app-card {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  align-items: end;
+}
+
+.app.wide .app-copy {
+  align-self: stretch;
+  padding-bottom: clamp(1.5rem, 3vw, 2rem);
+}
+
+.app.wide .app-shot {
+  padding: clamp(1.5rem, 3vw, 2.25rem) 0 0;
+}
+
+.app.wide .app-shot img {
+  border-radius: 12px 0 0 0;
+  border-right: 0;
+}
+
+.status[data-status="On sale"],
+.status[data-status="Live"] {
   color: var(--live);
 }
 
-.status[data-status="On sale"]::before {
+.status[data-status="On sale"]::before,
+.status[data-status="Live"]::before {
   opacity: 1;
 }
 
+/* In-progress list under the cards. */
+.workshop {
+  margin-top: 1.25rem;
+}
+
+/* ---------- How I build with AI ---------- */
+
+.ai-points {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.ai-points > li {
+  padding: clamp(1.5rem, 3vw, 2rem);
+  border-radius: var(--radius-l);
+  background: var(--bg-2);
+}
+
+.ai-points h3 {
+  font-size: 1.1875rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.016em;
+}
+
+.ai-points p {
+  margin-top: 0.5rem;
+  color: var(--label-2);
+  text-wrap: pretty;
+}
+
+.ai-points .proof {
+  margin-top: 0.85rem;
+  font-size: 0.9375rem;
+}
+
+.callout {
+  margin-top: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-m);
+  border: 1px solid var(--separator);
+  color: var(--label-2);
+}
+
+.callout strong {
+  color: var(--label);
+}
+
 @media (max-width: 860px) {
-  .apps {
+  .apps,
+  .ai-points {
     grid-template-columns: minmax(0, 1fr);
   }
+
+  .app.wide .app-card {
+    display: flex;
+  }
+
+  .app.wide .app-shot {
+    padding: 0 clamp(1rem, 2.5vw, 1.75rem);
+  }
+
+  .app.wide .app-shot img {
+    border-radius: 12px 12px 0 0;
+    border-right: 1px solid var(--separator);
+  }
+}
+
+/* ---------- Product page ---------- */
+
+.page-head .actions {
+  margin-top: 1.5rem;
+}
+
+.hero-shot {
+  margin-block: 0.5rem clamp(2rem, 5vw, 3.5rem);
+}
+
+.hero-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-m);
+  border: 1px solid var(--separator);
 }

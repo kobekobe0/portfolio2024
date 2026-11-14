@@ -12,9 +12,9 @@ export const site = {
   location: { locality: "Bulacan", country: "Philippines", countryCode: "PH" },
   email: "kobebrian.santos.e@gmail.com",
   resume: "/Kobe_Brian_Santos_Resume.pdf",
-  lastUpdated: "2026-10-04",
+  lastUpdated: "2026-11-13",
   description:
-    "Kobe Brian Santos is a full-stack developer in the Philippines. He builds back-office systems for banks and government offices with C# .NET, Node.js, React, Next.js, Angular and Oracle.",
+    "Kobe Brian Santos is a full-stack developer in the Philippines. He builds back-office systems for banks and government offices with C# .NET, Node.js, React, Next.js, Angular and Oracle, and ships his own Mac and web apps.",
   socials: [
     { label: "GitHub", href: "https://github.com/kobekobe0" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/kobesantos/" },
@@ -115,11 +115,12 @@ export const education = {
 };
 
 export const skills: { group: string; items: string[] }[] = [
-  { group: "Languages", items: ["TypeScript", "JavaScript", "C#", "SQL", "PL/SQL", "PHP"] },
+  { group: "Languages", items: ["TypeScript", "JavaScript", "C#", "Swift", "SQL", "PL/SQL", "PHP"] },
   { group: "Frontend", items: ["React", "Next.js", "Angular 20", "AngularJS", "Angular Material", "React Native", "Tailwind CSS", "MUI", "shadcn/ui"] },
   { group: "Backend", items: ["Node.js", "Express.js", "C# .NET Core", "Dapper", "Laravel", "REST APIs", "GraphQL", "Socket.IO", "BullMQ"] },
   { group: "Databases", items: ["Oracle 19c", "PostgreSQL", "MSSQL", "Sybase", "MySQL", "MongoDB", "Redis", "Prisma", "Sequelize", "Drizzle"] },
-  { group: "AI", items: ["Claude API", "OpenAI API", "Claude Code", "Model Context Protocol (MCP)", "LLM prompt pipelines"] },
+  { group: "AI", items: ["Claude Code (subagents, hooks, headless runs)", "OpenAI Codex CLI", "Gemini CLI", "Claude API", "OpenAI API", "Model Context Protocol (MCP)", "WhisperKit (on-device)"] },
+  { group: "Apple platforms", items: ["Swift", "SwiftUI", "AppKit", "ScreenCaptureKit", "AVFoundation", "Core Animation", "Code signing and notarization"] },
   { group: "DevOps and auth", items: ["GitLab CI/CD", "DigitalOcean", "PM2", "NGINX", "JWT", "Auth0", "RBAC"] },
 ];
 
@@ -132,11 +133,15 @@ export const quickAnswers: { q: string; a: string }[] = [
   },
   {
     q: "What does Kobe Brian Santos build?",
-    a: "Back-office systems: contract and supplier management for a bank, procurement and inventory automation used by 200+ Land Registration Authority branches, a real-time photo transaction platform for theme parks, and a quality management system for a US-based client.",
+    a: "Back-office systems: contract and supplier management for a bank, procurement and inventory automation used by 200+ Land Registration Authority branches, a real-time photo transaction platform for theme parks, and a quality management system for a US-based client. On his own he builds and sells products: Director, a screen recorder for Mac; LidLogic, a menu-bar app; Mochi, a 3D mascot studio; and Architecture Trainer, a system-design simulator.",
   },
   {
     q: "What is his tech stack?",
     a: "C# .NET Core, Node.js and Express on the backend; React, Next.js and Angular on the frontend; and Oracle, PostgreSQL, MSSQL, Sybase and MongoDB for data.",
+  },
+  {
+    q: "Does Kobe Brian Santos use AI tools?",
+    a: "Yes. In his own products, AI agents (mainly Claude Code, along with Codex and Gemini) handle much of the implementation under his direction, while he owns the product direction, system architecture, code review and testing strategy. He also built Ensemble, a tool that coordinates those agents as one team with cross-provider code review.",
   },
   {
     q: "Where did he study?",

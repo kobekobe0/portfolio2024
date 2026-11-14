@@ -5,7 +5,7 @@ import WorkRegister from "@/components/WorkRegister";
 import AppTiles from "@/components/AppTiles";
 import { site, experience, education, skills } from "@/lib/site";
 import { featured } from "@/lib/projects";
-import { apps } from "@/lib/apps";
+import { apps, workshop } from "@/lib/apps";
 import { articles } from "@/lib/articles";
 import { personId, websiteId } from "@/lib/schema";
 
@@ -24,10 +24,14 @@ export default function Home() {
           <p className="lede">
             Full-stack developer in the Philippines. Currently on the bank&apos;s supplier and contract
             management system. Before that, procurement automation used by 200+ Land Registration Authority branches.
+            On the side, he ships his own products, built with AI agents that he directs and checks.
           </p>
           <p className="actions">
             <Link className="button" href="/work">
               See the work
+            </Link>
+            <Link className="chev" href="/#products">
+              See the products
             </Link>
             <a className="chev" href={site.resume}>
               Download resume (PDF)
@@ -63,6 +67,10 @@ export default function Home() {
               <dd>2022</dd>
             </div>
             <div>
+              <dt>Products</dt>
+              <dd>2 Mac apps on sale, 1 web app live</dd>
+            </div>
+            <div>
               <dt>Education</dt>
               <dd>BS IT, cum laude, {education.school}</dd>
             </div>
@@ -88,12 +96,86 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="block" aria-labelledby="apps">
-        <h2 id="apps" className="block-title">
-          Indie apps. <span>Products designed, built and shipped on the side.</span>
+      <section className="block" aria-labelledby="products">
+        <h2 id="products" className="block-title">
+          Products. <span>Designed, built and shipped on his own, from idea to checkout.</span>
         </h2>
         <div className="block-body">
           <AppTiles items={apps} />
+          <ul className="group workshop" aria-label="In progress">
+            {workshop.map((w) => (
+              <li key={w.name}>
+                <span className="when">In progress</span>
+                <div>
+                  <strong>{w.name}</strong>, {w.platform}
+                  <div className="sub">{w.summary}</div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="block" aria-labelledby="ai">
+        <h2 id="ai" className="block-title">
+          Building with AI. <span>AI-assisted development, with engineering judgment at every step.</span>
+        </h2>
+        <div className="block-body">
+          <ul className="ai-points">
+            <li>
+              <h3>A new stack, shipped and sold</h3>
+              <p>
+                Director and LidLogic are native Swift apps, a stack outside his day job. Both went from idea to signed,
+                notarized and on sale with Claude Code as the main pair programmer.
+              </p>
+              <p className="proof">
+                <Link className="chev" href="/apps/director">
+                  Director
+                </Link>
+              </p>
+            </li>
+            <li>
+              <h3>His own multi-agent tooling</h3>
+              <p>
+                Ensemble runs Claude Code, Codex and Gemini as one team in isolated git worktrees, and never lets a
+                model review its own diff.
+              </p>
+              <p className="proof">
+                <Link className="chev" href="/apps/ensemble">
+                  Ensemble
+                </Link>
+              </p>
+            </li>
+            <li>
+              <h3>Guardrails over trust</h3>
+              <p>
+                For Architecture Trainer he ran 20 role-specific subagents under written rules, with hooks that hid the
+                acceptance tests from the agents writing the code, and mutation testing to catch weak tests.
+              </p>
+              <p className="proof">
+                <Link className="chev" href="/apps/architecture-trainer">
+                  Architecture Trainer
+                </Link>
+              </p>
+            </li>
+            <li>
+              <h3>AI inside products, with a budget</h3>
+              <p>
+                Mochi calls a model on the server behind rate limits, a hard daily spend cap and automatic refunds when a
+                call fails. Clipper transcribes on-device and sends only the transcript.
+              </p>
+              <p className="proof">
+                <Link className="chev" href="/apps/mochi-mascot-studio">
+                  Mochi
+                </Link>
+              </p>
+            </li>
+          </ul>
+          <p className="callout">
+            <strong>How the work is divided:</strong> AI agents handle much of the implementation in these products. Kobe
+            owns the product direction, system architecture, code review and testing strategy, and is accountable for
+            everything that ships.
+          </p>
         </div>
       </section>
 
@@ -179,8 +261,8 @@ export default function Home() {
             name: a.name,
             description: a.summary,
             url: a.url,
-            operatingSystem: "macOS",
-            applicationCategory: "UtilitiesApplication",
+            operatingSystem: a.os,
+            applicationCategory: a.category,
             author: { "@id": personId },
           }))}
       />

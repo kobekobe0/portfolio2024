@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import WorkRegister from "@/components/WorkRegister";
 import AppTiles from "@/components/AppTiles";
-import { apps } from "@/lib/apps";
+import { apps, workshop } from "@/lib/apps";
 import { site } from "@/lib/site";
 import { projects, earlier } from "@/lib/projects";
 import { breadcrumbSchema, personId } from "@/lib/schema";
 
 const description =
-  "Case studies of systems Kobe Brian Santos has built: a bank's supplier and contract portal, procurement automation for 200+ government branches, a real-time photo platform and a quality management system for a US client.";
+  "Case studies of systems Kobe Brian Santos has built: a bank's supplier and contract portal, procurement automation for 200+ government branches, a real-time photo platform, a quality management system for a US client, and his own products: two paid Mac apps, a 3D mascot studio and a system-design trainer.";
 
 export const metadata: Metadata = {
   title: "Work and case studies",
@@ -33,12 +33,25 @@ export default function Work() {
         <WorkRegister items={projects} />
       </section>
 
-      <section className="section" aria-labelledby="indie">
+      <section className="section" aria-labelledby="products">
         <div>
-          <h2 id="indie">Indie apps</h2>
-          <p className="section-note">Built and shipped on the side.</p>
+          <h2 id="products">Products</h2>
+          <p className="section-note">Designed, built and shipped on his own.</p>
         </div>
-        <AppTiles items={apps} />
+        <div>
+          <AppTiles items={apps} />
+          <ul className="group workshop" aria-label="In progress">
+            {workshop.map((w) => (
+              <li key={w.name}>
+                <span className="when">In progress</span>
+                <div>
+                  <strong>{w.name}</strong>, {w.platform}
+                  <div className="sub">{w.summary}</div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
 
       <section className="section" aria-labelledby="earlier">
@@ -73,12 +86,20 @@ export default function Work() {
             name: "Work and case studies",
             description,
             about: { "@id": personId },
-            hasPart: projects.map((p) => ({
-              "@type": "CreativeWork",
-              name: p.title,
-              url: `${site.url}/work/${p.slug}`,
-              description: p.summary,
-            })),
+            hasPart: [
+              ...projects.map((p) => ({
+                "@type": "CreativeWork",
+                name: p.title,
+                url: `${site.url}/work/${p.slug}`,
+                description: p.summary,
+              })),
+              ...apps.map((a) => ({
+                "@type": "SoftwareApplication",
+                name: a.name,
+                url: `${site.url}/apps/${a.slug}`,
+                description: a.summary,
+              })),
+            ],
           },
           breadcrumbSchema([
             { name: "Home", path: "/" },
