@@ -17,14 +17,12 @@ export default function Home() {
     <div className="wrap">
       <section className="hero">
         <div>
-          <p className="eyebrow">
-            {current.title} at {site.employer}
-          </p>
-          <h1>Kobe Brian Santos builds the back-office systems that banks and government offices run on.</h1>
+          <p className="eyebrow">Full-stack developer · Open to freelance projects</p>
+          <h1>Kobe Brian Santos ships AI-built software that works in production.</h1>
           <p className="lede">
-            Full-stack developer based in Makati City, Philippines. Currently on the bank&apos;s supplier and contract
-            management system. Before that, procurement automation used by 200+ Land Registration Authority branches.
-            On the side, he ships his own products, built with AI agents that he directs and checks.
+            With AI agents, he has built two Mac apps that are on sale and a 3D web app with a public demo. He knows
+            where they cut corners: auth, payments, data integrity and failure handling. By day, he builds banking
+            software at PSBank in Makati City.
           </p>
           <p className="actions">
             <Link className="button" href="/work">
