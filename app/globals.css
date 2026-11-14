@@ -4,28 +4,31 @@
   (two-tone headlines, rounded tiles) and each case study reads like a Tech Specs page
   (a left rail of labels over hairline rules). System type and system colors throughout,
   so the site follows the visitor's light or dark appearance.
+  Colors come from Mochi's palette: violet for links and buttons, lime for live status,
+  purple-tinted neutrals, and Mochi's deep purple-black for dark mode.
 
   Contrast (WCAG), light / dark:
-    label    #1d1d1f on #fff 16.8:1   |  #f5f5f7 on #000 19.3:1
-    label-2  #6e6e73 on #f5f5f7 4.7:1 |  #a1a1a6 on #1c1c1e 6.6:1
-    link     #0066cc on #f5f5f7 5.1:1 |  #2997ff on #1c1c1e 5.6:1
-    button   #fff on #0071e3 4.7:1
+    label    #1a1626 on #fff 17.7:1   |  #f8f4ff on #13101c 17.3:1
+    label-2  #6b6480 on #f5f3fb 5.1:1 |  #a89fc4 on #211c31 6.6:1
+    link     #5b3fd9 on #f5f3fb 6.1:1 |  #a99bff on #211c31 6.9:1
+    live     #4a6510 on #f5f3fb 6.0:1 |  #c6f24e on #211c31 12.7:1
+    button   #fff on #6246ea 5.9:1
 */
 
 :root {
   --bg: #ffffff;
-  --bg-2: #f5f5f7;
+  --bg-2: #f5f3fb;
   --bg-elevated: #ffffff;
-  --label: #1d1d1f;
-  --label-2: #6e6e73;
-  --link: #0066cc;
-  --fill: #0071e3;
-  --fill-hover: #0077ed;
+  --label: #1a1626;
+  --label-2: #6b6480;
+  --link: #5b3fd9;
+  --fill: #6246ea;
+  --fill-hover: #6e54f0;
   --on-fill: #ffffff;
-  --live: #1d7a35;
-  --separator: rgba(0, 0, 0, 0.12);
+  --live: #4a6510;
+  --separator: rgba(26, 22, 38, 0.12);
   --chrome: rgba(255, 255, 255, 0.72);
-  --shadow: 0 2px 6px rgba(0, 0, 0, 0.04), 0 12px 32px rgba(0, 0, 0, 0.06);
+  --shadow: 0 2px 6px rgba(26, 22, 38, 0.04), 0 12px 32px rgba(26, 22, 38, 0.07);
 
   --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "Segoe UI",
     Roboto, Arial, sans-serif;
@@ -42,15 +45,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #000000;
-    --bg-2: #1c1c1e;
-    --bg-elevated: #2c2c2e;
-    --label: #f5f5f7;
-    --label-2: #a1a1a6;
-    --link: #2997ff;
-    --live: #30d158;
-    --separator: rgba(255, 255, 255, 0.16);
-    --chrome: rgba(22, 22, 23, 0.78);
+    --bg: #13101c;
+    --bg-2: #211c31;
+    --bg-elevated: #2e2843;
+    --label: #f8f4ff;
+    --label-2: #a89fc4;
+    --link: #a99bff;
+    --live: #c6f24e;
+    --separator: rgba(168, 159, 196, 0.2);
+    --chrome: rgba(19, 16, 28, 0.78);
     --shadow: none;
   }
 }
