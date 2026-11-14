@@ -25,7 +25,7 @@ export default function About() {
       <div className="about-top">
         <div className="prose">
           <p>
-            I&apos;m a full-stack developer based in Bulacan, Philippines. I work as a Software Engineer at Philippine
+            I&apos;m a full-stack developer based in Makati City, Philippines. I work as a Software Engineer at Philippine
             Savings Bank (PSBank), where I build and maintain the bank&apos;s supplier and contract management system.
           </p>
           <p>

@@ -9,10 +9,10 @@ export const site = {
   role: "Full-stack developer",
   jobTitle: "Software Engineer",
   employer: "Philippine Savings Bank (PSBank)",
-  location: { locality: "Bulacan", country: "Philippines", countryCode: "PH" },
+  location: { locality: "Makati City", region: "Metro Manila", country: "Philippines", countryCode: "PH" },
   email: "kobebrian.santos.e@gmail.com",
   resume: "/Kobe_Brian_Santos_Resume.pdf",
-  lastUpdated: "2026-11-13",
+  lastUpdated: "2026-11-14",
   description:
     "Kobe Brian Santos is a full-stack developer in the Philippines. He builds back-office systems for banks and government offices with C# .NET, Node.js, React, Next.js, Angular and Oracle, and ships his own Mac and web apps.",
   socials: [
@@ -129,7 +129,7 @@ export const skills: { group: string; items: string[] }[] = [
 export const quickAnswers: { q: string; a: string }[] = [
   {
     q: "Who is Kobe Brian Santos?",
-    a: "Kobe Brian Santos is a full-stack developer based in Bulacan, Philippines. He works as a Software Engineer at Philippine Savings Bank (PSBank) and has shipped production systems for government and enterprise clients since 2022.",
+    a: "Kobe Brian Santos is a full-stack developer based in Makati City, Philippines. He works as a Software Engineer at Philippine Savings Bank (PSBank) and has shipped production systems for government and enterprise clients since 2022.",
   },
   {
     q: "What does Kobe Brian Santos build?",

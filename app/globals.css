@@ -303,6 +303,26 @@ a:hover {
   border-radius: var(--radius-m);
 }
 
+.specs-card .card-art {
+  display: block;
+  overflow: hidden;
+  border-radius: var(--radius-m);
+}
+
+.specs-card .card-art img {
+  transition: transform 0.3s ease;
+}
+
+.specs-card .card-art:hover img {
+  transform: scale(1.02);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .specs-card .card-art img {
+    transition: none;
+  }
+}
+
 .specs-card h2 {
   margin-top: 1.25rem;
   font-size: 0.875rem;

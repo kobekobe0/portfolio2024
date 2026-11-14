@@ -21,7 +21,8 @@ export function personSchema() {
     alumniOf: { "@type": "CollegeOrUniversity", name: education.school },
     address: {
       "@type": "PostalAddress",
-      addressRegion: site.location.locality,
+      addressLocality: site.location.locality,
+      addressRegion: site.location.region,
       addressCountry: site.location.countryCode,
     },
     knowsAbout: skills.flatMap((s) => s.items),

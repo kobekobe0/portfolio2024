@@ -31,36 +31,6 @@ const shot = (src: string, alt: string): Shot => ({ src: `/images/apps/${src}.we
 
 export const apps: App[] = [
   {
-    slug: "director",
-    name: "Director",
-    tagline: "The screen recorder that edits itself.",
-    summary:
-      "A native Mac screen recorder that adds smooth auto-zooms, a steady cursor and a studio background while you record, then exports up to 4K.",
-    status: "On sale",
-    platform: "macOS · Swift, SwiftUI",
-    os: "macOS 15",
-    category: "MultimediaApplication",
-    price: "$29",
-    url: "https://director-app.pages.dev",
-    urlLabel: "Visit the Director website",
-    description:
-      "Director records your screen and does the editing a polished demo video needs while you record: it zooms in where you click, follows your cursor, smooths out shaky mouse moves and puts the recording on a studio background. Every zoom lands on a timeline you can adjust before exporting.",
-    built: [
-      "Screen capture with ScreenCaptureKit and a compositor that renders zoom, cursor and background in real time, then exports MP4 at 1080p, 1440p or 4K.",
-      "A camera model that holds still while you work in one area and glides only when the cursor heads for the edge, plus cursor smoothing that keeps clicks exactly where they landed.",
-      "Click-triggered and shortcut-triggered zooms (⌃⌥Z), with each zoom editable as a block on a timeline.",
-      "Recording on any display, including vertical monitors, with 16:9, 9:16 and 1:1 exports.",
-      "Signing, notarization, a product website with a 35-second film, and direct sales.",
-    ],
-    stack: ["Swift", "SwiftUI", "AppKit", "ScreenCaptureKit", "AVFoundation", "Core Image", "VideoToolbox"],
-    images: [
-      shot("director-editor", "Director: the editor with recordings, a zoom timeline and look settings"),
-      shot("director-zoom", "Director: an automatic zoom following the cursor to a button"),
-      shot("director-looks", "Director: studio backgrounds, padding and rounded corners"),
-      shot("director-shapes", "Director: exports for 16:9, 9:16 and 1:1"),
-    ],
-  },
-  {
     slug: "mochi-mascot-studio",
     name: "Mochi · Mascot Studio",
     tagline: "Describe your brand and get a 3D mascot, a logo and a brand kit.",
@@ -90,6 +60,36 @@ export const apps: App[] = [
       shot("mochi-stickers", "Mochi: sticker pack builder with per-platform downloads"),
       shot("mochi-logo", "Mochi: logo editor with layout templates"),
       shot("mochi-home", "Mochi: landing page with the describe-your-brand prompt"),
+    ],
+  },
+  {
+    slug: "director",
+    name: "Director",
+    tagline: "The screen recorder that edits itself.",
+    summary:
+      "A native Mac screen recorder that adds smooth auto-zooms, a steady cursor and a studio background while you record, then exports up to 4K.",
+    status: "On sale",
+    platform: "macOS · Swift, SwiftUI",
+    os: "macOS 15",
+    category: "MultimediaApplication",
+    price: "$29",
+    url: "https://director-app.pages.dev",
+    urlLabel: "Visit the Director website",
+    description:
+      "Director records your screen and does the editing a polished demo video needs while you record: it zooms in where you click, follows your cursor, smooths out shaky mouse moves and puts the recording on a studio background. Every zoom lands on a timeline you can adjust before exporting.",
+    built: [
+      "Screen capture with ScreenCaptureKit and a compositor that renders zoom, cursor and background in real time, then exports MP4 at 1080p, 1440p or 4K.",
+      "A camera model that holds still while you work in one area and glides only when the cursor heads for the edge, plus cursor smoothing that keeps clicks exactly where they landed.",
+      "Click-triggered and shortcut-triggered zooms (⌃⌥Z), with each zoom editable as a block on a timeline.",
+      "Recording on any display, including vertical monitors, with 16:9, 9:16 and 1:1 exports.",
+      "Signing, notarization, a product website with a 35-second film, and direct sales.",
+    ],
+    stack: ["Swift", "SwiftUI", "AppKit", "ScreenCaptureKit", "AVFoundation", "Core Image", "VideoToolbox"],
+    images: [
+      shot("director-editor", "Director: the editor with recordings, a zoom timeline and look settings"),
+      shot("director-zoom", "Director: an automatic zoom following the cursor to a button"),
+      shot("director-looks", "Director: studio backgrounds, padding and rounded corners"),
+      shot("director-shapes", "Director: exports for 16:9, 9:16 and 1:1"),
     ],
   },
   {

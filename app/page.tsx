@@ -22,7 +22,7 @@ export default function Home() {
           </p>
           <h1>Kobe Brian Santos builds the back-office systems that banks and government offices run on.</h1>
           <p className="lede">
-            Full-stack developer in the Philippines. Currently on the bank&apos;s supplier and contract
+            Full-stack developer based in Makati City, Philippines. Currently on the bank&apos;s supplier and contract
             management system. Before that, procurement automation used by 200+ Land Registration Authority branches.
             On the side, he ships his own products, built with AI agents that he directs and checks.
           </p>
@@ -40,14 +40,16 @@ export default function Home() {
         </div>
 
         <aside className="specs-card" aria-labelledby="specs-title">
-          <Image
-            src="/images/kobe-brian-santos.webp"
-            alt="Portrait of Kobe Brian Santos"
-            width={720}
-            height={720}
-            sizes="(max-width: 860px) 26rem, 18rem"
-            priority
-          />
+          <Link className="card-art" href="/apps/mochi-mascot-studio">
+            <Image
+              src="/images/mochi-mascot.webp"
+              alt="Mochi Mascot Studio: a purple 3D mascot typing on a laptop, made with the app"
+              width={720}
+              height={720}
+              sizes="(max-width: 860px) 26rem, 18rem"
+              priority
+            />
+          </Link>
           <h2 id="specs-title">Tech specs · Updated {updated}</h2>
           <dl className="specs">
             <div>
@@ -241,7 +243,7 @@ export default function Home() {
         <p className="contact-line">
           <a href={`mailto:${site.email}`}>{site.email}</a>
         </p>
-        <p className="section-note">He is in the Philippines (UTC+8).</p>
+        <p className="section-note">He is in Makati City, Philippines (UTC+8).</p>
         <ul className="inline-links">
           {site.socials.map((s) => (
             <li key={s.href}>
